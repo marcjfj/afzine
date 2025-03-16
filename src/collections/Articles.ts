@@ -21,6 +21,24 @@ export const Articles: CollectionConfig = {
       required: true,
     },
     {
+      name: 'categories',
+      type: 'relationship',
+      relationTo: 'categories',
+      hasMany: true,
+    },
+    {
+      name: 'author',
+      type: 'relationship',
+      relationTo: 'authors',
+      required: false,
+    },
+    {
+      name: 'issue',
+      type: 'relationship',
+      relationTo: 'issues',
+      required: false,
+    },
+    {
       name: 'content',
       type: 'richText',
       required: true,
