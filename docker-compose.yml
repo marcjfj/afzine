@@ -26,7 +26,7 @@ services:
       - '5432:5432'
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_DB: your-database-name # THIS MUST MATCH YOUR DB NAME IN .env
+      POSTGRES_DB: af-dev # THIS MUST MATCH YOUR DB NAME IN .env
       POSTGRES_HOST_AUTH_METHOD: trust
 
   # Uncomment the following to use mongodb

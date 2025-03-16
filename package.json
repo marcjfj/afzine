@@ -13,20 +13,22 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "migrate": "payload migrate",
     "ci": "payload migrate && pnpm build"
   },
   "dependencies": {
+    "@payloadcms/db-postgres": "^3.28.1",
+    "@payloadcms/db-vercel-postgres": "latest",
     "@payloadcms/next": "latest",
     "@payloadcms/payload-cloud": "latest",
     "@payloadcms/richtext-lexical": "latest",
+    "@payloadcms/storage-vercel-blob": "latest",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "15.2.2",
     "payload": "latest",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "@payloadcms/db-vercel-postgres": "latest",
-    "@payloadcms/storage-vercel-blob": "latest"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
