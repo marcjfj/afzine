@@ -18,7 +18,7 @@ export const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({ thumbnail, t
       alt={title}
       width={1200}
       height={500}
-      className="absolute inset-0 object-cover grayscale brightness-75 contrast-200 opacity-75 h-full"
+      className="absolute inset-0 object-cover grayscale brightness-75 contrast-200 opacity-65 h-full"
       unoptimized={thumbnail.mimeType === 'image/gif'}
     />
   )

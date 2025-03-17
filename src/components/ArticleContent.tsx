@@ -11,7 +11,7 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({ content }) => {
     <div className="mx-auto mt-12">
       <RichText
         data={content}
-        className="prose prose-lg text-black mx-auto prose-blockquote:italic prose-blockquote:lg:text-4xl prose-blockquote:font-bold prose-blockquote:text-balance prose-blockquote:border-black prose-img:grayscale prose-img:brightness-75 prose-img:contrast-200 prose-img:opacity-75"
+        className="prose prose-lg text-black mx-auto prose-blockquote:italic prose-blockquote:lg:text-4xl prose-blockquote:font-bold prose-blockquote:text-balance prose-blockquote:border-black prose-img:grayscale prose-img:brightness-75 prose-img:contrast-200 prose-img:opacity-75 drop-shadow-[2px_2px_5px_rgba(255,255,255,0.75)]"
       />
     </div>
   )

@@ -59,6 +59,8 @@ export default async function ZineLayout({ children }: { children: React.ReactNo
     })
 
     issue = issueQuery.docs[0]
+
+    console.log(issue)
   }
 
   return (
