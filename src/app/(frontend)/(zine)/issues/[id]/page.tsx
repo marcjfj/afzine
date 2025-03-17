@@ -10,13 +10,13 @@ import type { Issue } from '@/payload-types'
 
 // Define the page props to include the id parameter
 interface PageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export default async function IssuePage({ params }: PageProps) {
-  const { id } = params
+  const { id } = await params
   const payloadConfig = await config
   const payload = await getPayload({ config: payloadConfig })
 
