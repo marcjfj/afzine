@@ -77,7 +77,7 @@ export default async function IssuesPage() {
     return (
       <div className="container mx-auto px-4 py-8 text-center">
         <h1 className="text-4xl font-bold mb-6">Something went wrong</h1>
-        <p className="text-lg">We couldn't load the issues. Please try again later.</p>
+        <p className="text-lg">We couldn&apos;t load the issues. Please try again later.</p>
       </div>
     )
   }
