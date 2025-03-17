@@ -20,7 +20,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en" className={inriaSerif.className}>
-      <body className="">
+      <body className="selection:bg-red-600 selection:text-white">
         <main>{children}</main>
       </body>
     </html>

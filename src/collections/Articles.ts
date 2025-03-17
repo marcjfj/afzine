@@ -39,6 +39,27 @@ export const Articles: CollectionConfig = {
       required: false,
     },
     {
+      name: 'slug',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+      },
+      hooks: {
+        beforeValidate: [
+          ({ data, originalDoc }) => {
+            if (data?.title && (!originalDoc || data.title !== originalDoc?.title)) {
+              return data.title
+                .toLowerCase()
+                .replace(/\s+/g, '-')
+                .replace(/[^\w-]+/g, '')
+            }
+            return data?.slug || ''
+          },
+        ],
+      },
+      unique: true,
+    },
+    {
       name: 'content',
       type: 'richText',
       required: true,

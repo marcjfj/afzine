@@ -167,6 +167,7 @@ export interface Article {
   categories?: (number | Category)[] | null;
   author?: (number | null) | Author;
   issue?: (number | null) | Issue;
+  slug?: string | null;
   content: {
     root: {
       type: string;
@@ -339,6 +340,7 @@ export interface ArticlesSelect<T extends boolean = true> {
   categories?: T;
   author?: T;
   issue?: T;
+  slug?: T;
   content?: T;
   updatedAt?: T;
   createdAt?: T;
