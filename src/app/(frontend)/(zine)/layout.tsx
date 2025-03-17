@@ -68,7 +68,7 @@ export default async function ZineLayout({ children }: { children: React.ReactNo
           {/* issue number */}
           <span className="text-2xl lg:text-4xl font-bold">No. {issue.issueNumber}</span>
           {/* issue title */}
-          <h1 className="lg:text-2xl font-bold italic">{issue.title}</h1>
+          <h1 className="lg:text-xl font-bold italic">{issue.title}</h1>
         </div>
         <div className="">
           {/* logo */}
@@ -82,7 +82,7 @@ export default async function ZineLayout({ children }: { children: React.ReactNo
         </div>
         <div className="flex flex-col items-end">
           {/* issue publication date */}
-          <span className="lg:text-2xl font-bold italic">
+          <span className="lg:text-xl font-bold italic">
             {new Date(issue.publicationDate).toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'long',
