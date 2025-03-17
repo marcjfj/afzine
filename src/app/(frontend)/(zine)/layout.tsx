@@ -4,6 +4,7 @@ import { getPayload } from 'payload'
 import React from 'react'
 
 import config from '@/payload.config'
+import Link from 'next/link'
 
 export default async function ZineLayout({ children }: { children: React.ReactNode }) {
   const headers = await getHeaders()
@@ -74,13 +75,15 @@ export default async function ZineLayout({ children }: { children: React.ReactNo
         </div>
         <div className="">
           {/* logo */}
-          <Image
-            src="/af-logo.svg"
-            alt="logo"
-            width={100}
-            height={100}
-            className="w-16 lg:w-[100px]"
-          />
+          <Link href="/">
+            <Image
+              src="/af-logo.svg"
+              alt="logo"
+              width={100}
+              height={100}
+              className="w-16 lg:w-[100px]"
+            />
+          </Link>
         </div>
         <div className="flex flex-col items-end">
           {/* issue publication date */}
@@ -100,13 +103,15 @@ export default async function ZineLayout({ children }: { children: React.ReactNo
       <footer className="flex items-center justify-between w-full border-t-2 pt-6 mt-12">
         <div className="">
           {/* logo */}
-          <Image
-            src="/af-logo.svg"
-            alt="logo"
-            width={100}
-            height={100}
-            className="w-16 lg:w-[100px]"
-          />
+          <Link href="/">
+            <Image
+              src="/af-logo.svg"
+              alt="logo"
+              width={100}
+              height={100}
+              className="w-16 lg:w-[100px]"
+            />
+          </Link>
         </div>
         <div className="">
           {/* issue number */}

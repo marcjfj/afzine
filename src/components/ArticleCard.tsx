@@ -53,7 +53,9 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
         )}
         <ArticleHeader title={article.title} categories={article.categories} />
       </div>
-      <ArticleAuthor author={article.author} />
+      <div className="p-6 max-w-3xl mx-auto">
+        <ArticleAuthor author={article.author} />
+      </div>
       <ArticleContent content={article.content as SerializedEditorState} />
     </div>
   )
