@@ -14,7 +14,7 @@
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "migrate": "payload migrate",
-    "ci": "payload migrate -y && pnpm build"
+    "ci": "payload migrate:fresh -y && pnpm build"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.28.1",
